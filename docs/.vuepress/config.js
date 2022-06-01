@@ -1,3 +1,11 @@
+/*
+ * @Author: chenkangxu
+ * @Date: 2022-05-21 21:03:37
+ * @LastEditTime: 2022-05-28 12:32:19
+ * @LastEditors: chenkangxu
+ * @Description: 
+ * @Github: 
+ */
 // 具体配置文档: https://vuepress.vuejs.org/zh/guide/
 
 module.exports = {
@@ -14,7 +22,7 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
-
+    base:"/docs/",
     themeConfig: {
 
         // 右上角导航菜单

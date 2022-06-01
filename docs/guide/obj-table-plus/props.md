@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenkangxu
+ * @Date: 2022-05-21 21:38:02
+ * @LastEditTime: 2022-05-28 11:32:50
+ * @LastEditors: chenkangxu
+ * @Description: 
+ * @Github: 
+-->
 # Props
 
 | 参数         | 说明         | 类型          | 默认值 | 可选值 |
@@ -8,7 +16,10 @@
 | tableEvent   | 表格事件配置 | Object        | {}     |        |
 | toolbarProp  | 工具栏配置   | Object        | {}     |        |
 | toolbarEvent | 工具栏事件   | Object        | {}     |        |
+| pagerStyle  | 底部分页器样式配置   | Object        | {}     |        |
 | isPagination | 是否分页     | Boolean       | true   | false  |
+| enableAutoQuery | 是否自动执行query事件     | Boolean       | true   | false  |
+| enableCacheUuid | 是否启用缓存uuid，开启后每个表格在生成uuid后将会缓存起来，当表格列变化时不会重新获取一遍     | Boolean       | false   | true  |
 
 ## tableData
 
@@ -74,21 +85,53 @@
 ```
 
 ## tableCols
-https://vxetable.cn/v3/#/column/api
+<a href="https://vxetable.cn/v3/#/column/api" target="_blank">均参考vxe-column提供的参数</a>
 除了vxe官方给的属性之外，本组件还提供了其他功能
 
 | 参数         | 说明         | 类型          | 默认值 | 可选值 |
 | ------------ | ------------ | ------------- | ------ | ------ |
-| diy    | 是否启用自定义，如果启用，将使用内部组件 | Boolean | false     |  true      |
+| diy<Badge text="弃用" type="error"/> | 是否启用自定义，如果启用，将使用内部组件 | Boolean | false     |  true      |
 | type    | 当diy为true时，使用表格内部组件及其功能；如果diy为false，则对应vxe-column组件的type | String | ""     |  jsx,button,input      |
-| render    | 当diy为true且type等于jsx时可以使用。要求函数要返回一个jsx对象 | Function | ()=>{}  |        |
+| type<Badge text="1.1.0" type="tip"/>    | 合并了type | String | ""     |  jsx,button,input      |
+| render<Badge text="1.0.10" type="tip"/>    | 当diy为true且type等于jsx时可以使用。要求函数要返回一个jsx对象 | Function | ()=>{}  |        |
+| render<Badge text="1.1.0" type="tip"/>    | 当type等于jsx时可以使用。要求函数要返回一个jsx对象 | Function | ()=>{}  |        |
 
 ## tableProp
+<a href="https://vxetable.cn/v3/#/table/api" target="_blank">均参考vxe-table提供的参数</a>
+除了vxe官方给的属性之外，本组件还提供了其他功能
+
+| 参数         | 说明         | 类型          | 默认值 | 可选值 |
+| ------------ | ------------ | ------------- | ------ | ------ |
+|  |  |  |      |        |
 
 ## tableEvent
+<a href="https://vxetable.cn/v3/#/table/api" target="_blank">均参考vxe-table提供的事件</a>
+除了vxe官方给的属性之外，本组件还提供了其他功能
+
+| 参数         | 说明         | 类型          | 默认值 | 可选值 |
+| ------------ | ------------ | ------------- | ------ | ------ |
+|  |  |  |      |        |
 
 ## toolbarProp
+<a href="https://vxetable.cn/v3/#/toolbar/api" target="_blank">均参考vxe-toolbar提供的参数</a>
+除了vxe官方给的属性之外，本组件还提供了其他功能
+
+| 参数         | 说明         | 类型          | 默认值 | 可选值 |
+| ------------ | ------------ | ------------- | ------ | ------ |
+|  |  |  |      |        |
 
 ## toolbarEvent
+<a href="https://vxetable.cn/v3/#/toolbar/api" target="_blank">均参考vxe-toolbar提供的事件</a>
+除了vxe官方给的属性之外，本组件还提供了其他功能
 
-## isPagination
+| 参数         | 说明         | 类型          | 默认值 | 可选值 |
+| ------------ | ------------ | ------------- | ------ | ------ |
+|  |  |  |      |        |
+
+## pagerStyle
+<a href="https://vxetable.cn/v3/#/pager/api" target="_blank">均参考vxe-pager提供的属性</a>
+除了vxe官方给的属性之外，本组件还提供了其他功能
+
+| 参数         | 说明         | 类型          | 默认值 | 可选值 |
+| ------------ | ------------ | ------------- | ------ | ------ |
+|  |  |  |      |        |
