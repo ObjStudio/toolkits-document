@@ -1,11 +1,3 @@
-<!--
- * @Author: chenkangxu
- * @Date: 2022-05-21 21:38:02
- * @LastEditTime: 2022-05-28 11:32:50
- * @LastEditors: chenkangxu
- * @Description: 
- * @Github: 
--->
 # Props
 
 | 参数         | 说明         | 类型          | 默认值 | 可选值 |
