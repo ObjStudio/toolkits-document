@@ -1,3 +1,11 @@
+/*
+ * @Author: chenkangxu
+ * @Date: 2022-05-21 21:03:37
+ * @LastEditTime: 2022-06-02 20:02:28
+ * @LastEditors: chenkangxu
+ * @Description: 
+ * @Github: 
+ */
 module.exports = [{
 		title: 'obj-table-plus',
 		collapsable: true,//是否折叠
@@ -6,6 +14,7 @@ module.exports = [{
 			'/guide/obj-table-plus/props',
 			'/guide/obj-table-plus/methods',
 			'/guide/obj-table-plus/events',
+			'/guide/obj-table-plus/slots',
 		]
 	},
 	{

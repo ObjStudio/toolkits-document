@@ -2,7 +2,7 @@
 
 | 参数         | 说明         | 类型          | 默认值 | 可选值 |
 | ------------ | ------------ | ------------- | ------ | ------ |
-| tableData    | 表格内容数据 | Array | []     |        |
+| tableData(v-model)    | 表格内容数据 | Array | []     |        |
 | tableCols    | 表格列的配置 | Array | []     |        |
 | tableProp    | 表格配置项   | Object        | {}     |        |
 | tableEvent   | 表格事件配置 | Object        | {}     |        |
