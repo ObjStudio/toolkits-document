@@ -12,6 +12,13 @@
 | isPagination | 是否分页     | Boolean       | true   | false  |
 | enableAutoQuery | 是否自动执行query事件     | Boolean       | true   | false  |
 | enableCacheUuid | 是否启用缓存uuid，开启后每个表格在生成uuid后将会缓存起来，当表格列变化时不会重新获取一遍     | Boolean       | false   | true  |
+| mode | 功能模式，可选值default(默认表格分页模式)，grid(宫格卡片布局模式,需要传入colNumber)     | String       | default   | grid  |
+| colNumber | 当mode=grid时需要传入colNumber,默认是4列 |Number| 4   | 数字  |
+| enableElementStyle | 是否与elementUI样式对齐 |Boolean| true  | false  |
+| completeTime | 完成时间，用于控制动画。比如请求太快动画来不及展示，就限定个延时进行展示动画。单位：ms |Number| 0  | 数字  |
+| height | 组件高度,这样就不用再在组件外加上style样式了。高度就是高度；若设置为auto将会自动盛满其父组件 |String| auto  | 500px等等  |
+| width | 组件宽度 |String| 100%  | 100px等等  |
+| enablePagerInterceptors<Badge text="1.2.0" type="tip"/> | 是否启用分页点击拦截器,默认不启用，若启用，当监听页码事件变化时，必须调用next方法，否则不会进行下去。 |Boolean| false  | true  |
 
 ## tableData
 
